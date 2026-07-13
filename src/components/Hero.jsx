@@ -79,7 +79,7 @@ function Hero() {
           transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-          <img src="/images/profile.png" alt="profile-pic" className='w-72 md:w-80 lg:w-96 rounded-full shadow-xl' />
+          <img src="/images/hero.png" alt="abhinav" className='w-72 md:w-80 lg:w-96 rounded-full shadow-xl' />
         </motion.div>
 
 
