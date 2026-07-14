@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from "react";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Home from "./pages/Home";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./animations/Loader";
@@ -13,28 +14,38 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer=setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoading(false);
     }, 2500);
-  
+
     return () => {
       clearTimeout(timer);
     }
   }, [])
-  
+
 
   return (
     <>
-      <FloatingBackground/>
-      <ScrollProgress/>
-      <MouseGlow/>
+      <FloatingBackground />
+      <ScrollProgress />
+      <MouseGlow />
       <AnimatePresence mode="wait">
-        {loading && <Loader/>}
+        {loading && <Loader />}
       </AnimatePresence>
 
-      {!loading && <Home/>}
+      {!loading && <Home />}
 
-      <BackToTop/>
+      <BackToTop />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="light"
+      />
     </>
   )
 }

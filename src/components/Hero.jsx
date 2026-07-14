@@ -9,9 +9,9 @@ function Hero() {
   return (
     <section
       id='home'
-      className='min-h-screen flex items-center justify-center px-6 pt-24 bg-transparent'
+      className='min-h-screen flex items-center justify-center px-6 pt-28 bg-whit dark:bg-zinc-950/60'
     >
-      <div className='max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center'>
+      <div className='max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center'>
         <div>
 
 
@@ -36,7 +36,7 @@ function Hero() {
               duration: 0.8,
               ease: "easeOut",
             }}
-            className="text-5xl md:text-6xl font-bold mt-3"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold mt-3 text-black dark:text-white"
           >
             Abhinav Kumar
           </motion.h1>
@@ -50,7 +50,7 @@ function Hero() {
               delay: 0.45,
               duration: 0.8,
             }}
-            className="text-2xl md:text-3xl font-semibold text-gray-700 mt-4 h-10"
+            className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mt-4 h-10"
           >
             <TypeAnimation
               sequence={[
@@ -78,7 +78,7 @@ function Hero() {
               delay: 0.65,
               duration: 0.8,
             }}
-            className="mt-6 text-gray-500 leading-8"
+            className="mt-6 text-gray-500 dark:text-gray-400 leading-8"
           >
             I build responsive, modern and user-friendly web applications
             using React, Node.js, Express and MongoDB.
@@ -93,10 +93,10 @@ function Hero() {
               delay: 0.9,
               duration: 0.8,
             }}
-            className="mt-8 flex gap-4"
+            className="mt-8 flex flex-col sm:flex-row gap-4"
           >
             <MagneticButton
-              className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
+              className='bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition'
               onClick={() =>
                 document
                   .getElementById("contact")
@@ -107,7 +107,7 @@ function Hero() {
             </MagneticButton>
 
             <MagneticButton
-              className="border border-black px-6 py-3 rounded-lg hover:bg-black hover:text-white transition"
+              className="border border-black dark:border-white text-black dark:text-white px-6 py-3 rounded-lg hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition"
               onClick={() => window.open("/resume.pdf")}
             >
               Resume
@@ -146,7 +146,7 @@ function Hero() {
           }}
           className="flex justify-center"
         >
-          <img src="/images/hero.png" alt="abhinav" className='w-72 md:w-80 lg:w-96 rounded-full shadow-2xl' />
+          <img src="/images/hero.png" alt="abhinav" className='w-72 sm:w-72 md:w-80 lg:w-96 rounded-full shadow-2xl dark:shadow-black/50' />
         </motion.div>
 
 

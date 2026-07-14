@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section
       id='skills'
-      className='min-h-screen py-20 px-6 bg-transparent'
+      className='min-h-screen py-20 px-6 bg-transparent dark:bg-zinc-950/60'
     >
       <div className='max-w-6xl mx-auto '>
         <motion.h2
@@ -14,7 +14,7 @@ function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-center mb-14"
+          className="text-4xl font-bold text-center mb-14 text-black dark:text-white"
         >
           My Skills 
         </motion.h2>
@@ -35,7 +35,7 @@ function Skills() {
                 scale: 1.05,
                 y: -8,
               }}
-              className='bg-white rounded-xl shadow-md p-6 text-center text-lg font-semibold cursor-pointer'
+              className='bg-white dark:bg-zinc-900 text-black dark:text-white rounded-xl shadow-md p-6 text-center text-lg font-semibold cursor-pointer transition-colors duration-300'
               >
                 {skill}
               </motion.div>

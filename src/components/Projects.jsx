@@ -6,7 +6,7 @@ function Projects() {
     return (
         <section
             id='projects'
-            className='py-20 px-6 bg-white/60 backdrop-blur-sm'
+            className='py-20 px-6 bg-transparent dark:bg-zinc-950/60 backdrop-blur-sm transition-colors duration-300'
         >
             <div className='max-w-7xl mx-auto'>
                 <motion.h2
@@ -14,12 +14,12 @@ function Projects() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl font-bold text-center mb-14"
+                    className="text-4xl font-bold text-center mb-14 text-black dark:text-white"
                 >
                     My Projects
                 </motion.h2>
 
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className='grid sm:grid-cols-2 lg:grid-cols-3  gap-8'>
                     {
                         projects.map((project, index) => (
                             <motion.div
@@ -35,7 +35,7 @@ function Projects() {
                                     y: -12,
                                     scale: 1.02,
                                 }}
-                                className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200 shadow-md transition-all duration-300 hover:shadow-[0_25px_50px_rgba(0,0,0,0.18)] hover:border-blue-400"
+                                className="group relative overflow-hidden rounded-2xl bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 shadow-md transition-all duration-300 hover:shadow-[0_25px_50px_rgba(0,0,0,0.18)] hover:border-blue-400"
                             >
                                 <div className="overflow-hidden">
                                     <motion.img
@@ -52,11 +52,11 @@ function Projects() {
                                 </div>
 
                                 <div className='p-6 space-y-4'>
-                                    <h3 className='text-2xl font-bold group-hover:text-blue-600 transition'>
+                                    <h3 className='text-2xl font-bold text-black dark:text-white group-hover:text-blue-600 transition'>
                                         {project.title}
                                     </h3>
 
-                                    <p className='text-green-600 mt-3'>
+                                    <p className='text-green-600 dark:text-green-400 mt-3'>
                                         {project.description}
                                     </p>
 
@@ -64,7 +64,7 @@ function Projects() {
                                         {project.tech.map((tech, i) => (
                                             <span
                                                 key={i}
-                                                className='px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 transition duration-300 group-hover:bg-black group-hover:text-white'
+                                                className='px-3 py-1 rounded-full text-sm bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300 transition duration-300 group-hover:bg-black group-hover:text-white'
                                             >
                                                 {tech}
                                             </span>
@@ -79,7 +79,7 @@ function Projects() {
                                             rel="noreferrer"
                                             whileHover={{ scale: 1.08 }}
                                             whileTap={{ scale: 0.95 }}
-                                            className="px-4 py-2 rounded-lg bg-black text-white transition"
+                                            className="px-4 py-2 rounded-lg bg-black dark:bg-white text-white dark:text-black transition"
                                         >
                                             GitHub
                                         </motion.a>
@@ -90,7 +90,7 @@ function Projects() {
                                             whileTap={{
                                                 scale: 0.95,
                                             }}
-                                            href={project.live} className='px-4 py-2 border rounded-lg hover:bg-black hover:text-white transition'>Live Demo</motion.a>
+                                            href={project.live} className='px-4 py-2 border border-black dark:border-white text-black dark:text-white rounded-lg hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition'>Live Demo</motion.a>
                                     </div>
                                 </div>
                             </motion.div>
