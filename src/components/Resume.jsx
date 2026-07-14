@@ -6,7 +6,7 @@ function Resume() {
   return (
     <section
       id='resume'
-      className='min-h-screen flex items-center justify-center bg-gray-50 px-6 py-20'
+      className='min-h-screen flex items-center justify-center py-20 px-6 bg-transparent'
     >
       <div className='max-w-5xl mx-auto text-center'>
         <motion.div

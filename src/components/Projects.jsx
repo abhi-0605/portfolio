@@ -6,7 +6,7 @@ function Projects() {
     return (
         <section
             id='projects'
-            className='py-20 px-6 bg-white'
+            className='py-20 px-6 bg-white/60 backdrop-blur-sm'
         >
             <div className='max-w-7xl mx-auto'>
                 <motion.h2
@@ -24,22 +24,35 @@ function Projects() {
                         projects.map((project, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 40 }}
+                                initial={{ opacity: 0, y: 60 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{
-                                    delay: index * 0.15,
-                                    duration: 0.5,
+                                    duration: 0.15,
+                                    ease: "easeOut",
                                 }}
                                 whileHover={{
-                                    y: -10,
+                                    y: -12,
+                                    scale: 1.02,
                                 }}
-                                className='bg-green-50 rounded-xl shadow-lg overflow-hidden'
+                                className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200 shadow-md transition-all duration-300 hover:shadow-[0_25px_50px_rgba(0,0,0,0.18)] hover:border-blue-400"
                             >
-                                <img src={project.image} alt={project.title} className='h-56 w-full object-cover' />
+                                <div className="overflow-hidden">
+                                    <motion.img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="h-56 w-full object-cover"
+                                        whileHover={{
+                                            scale: 1.08,
+                                        }}
+                                        transition={{
+                                            duration: 0.25,
+                                        }}
+                                    />
+                                </div>
 
-                                <div className='p-6'>
-                                    <h3 className='text-2xl font-bold'>
+                                <div className='p-6 space-y-4'>
+                                    <h3 className='text-2xl font-bold group-hover:text-blue-600 transition'>
                                         {project.title}
                                     </h3>
 
@@ -48,10 +61,10 @@ function Projects() {
                                     </p>
 
                                     <div className='flex flex-wrap gap-2 mt-5'>
-                                        {project.tech.map((tech,i)=>(
+                                        {project.tech.map((tech, i) => (
                                             <span
                                                 key={i}
-                                                className='px-3 py-1 bg-black text-white rounded-full text-sm'
+                                                className='px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700 transition duration-300 group-hover:bg-black group-hover:text-white'
                                             >
                                                 {tech}
                                             </span>
@@ -59,9 +72,25 @@ function Projects() {
                                     </div>
 
 
-                                    <div className='flex gap-4 mt-6'>
-                                        <a href={project.github} className='px-4 py-2 bg-black text-white rounded-lg'> GitHub</a>
-                                        <a href={project.live} className='px-4 py-2 border rounded-lg'>Live Demo</a>
+                                    <div className='flex gap-4 pt-2'>
+                                        <motion.a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            whileHover={{ scale: 1.08 }}
+                                            whileTap={{ scale: 0.95 }}
+                                            className="px-4 py-2 rounded-lg bg-black text-white transition"
+                                        >
+                                            GitHub
+                                        </motion.a>
+                                        <motion.a
+                                            whileHover={{
+                                                scale: 1.08,
+                                            }}
+                                            whileTap={{
+                                                scale: 0.95,
+                                            }}
+                                            href={project.live} className='px-4 py-2 border rounded-lg hover:bg-black hover:text-white transition'>Live Demo</motion.a>
                                     </div>
                                 </div>
                             </motion.div>

@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section
       id='skills'
-      className='min-h-screen bg-gray-50 py-20 px-6'
+      className='min-h-screen py-20 px-6 bg-transparent'
     >
       <div className='max-w-6xl mx-auto '>
         <motion.h2

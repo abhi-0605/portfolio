@@ -6,7 +6,7 @@ function About() {
   return (
     <section
       id='about'
-      className='min-h-screen flex items-center bg-white px-6 py-20'
+      className='min-h-screen flex items-center py-20 px-6 bg-white/60 backdrop-blur-sm'
     >
       <div className='max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center'>
 
