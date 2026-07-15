@@ -1,16 +1,221 @@
-# React + Vite
+# 🚀 Modern Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive, and animated developer portfolio built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**. Designed to showcase projects, skills, experience, and contact information with smooth animations and a clean UI.
 
-Currently, two official plugins are available:
+Live - https://abhi0605-portfolio.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Preview
+<img width="1900" height="852" alt="Screenshot 2026-07-15 083824" src="https://github.com/user-attachments/assets/3475e03f-8757-473b-a51a-ec8a482ad2d4" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+### 🧭 Navigation
+- Active navigation highlighting
+- Smooth scrolling
+- Sticky navbar
+- Mobile hamburger menu
+- Responsive navigation
+
+### 🎨 Modern UI
+- Beautiful Hero section
+- About section
+- Skills showcase
+- Project cards
+- Contact form
+- Footer with social links
+
+### ✨ Animations
+- Page loading animation
+- Text reveal effects
+- Scroll reveal animations
+- Floating gradient background
+- Mouse-follow glow
+- Magnetic buttons
+- Animated project cards
+- Smooth transitions
+
+### ⚙️ Functionality
+- Dark/Light mode
+- EmailJS contact form
+- Back-to-top button
+- Responsive design
+- Optimized performance
+
+### 🚀 Deployment
+- Vercel deployment
+- SEO optimized
+- Fast loading
+- Mobile friendly
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+
+### Animations
+- Framer Motion
+
+### Icons
+- Lucide React
+- React Icons
+
+### Utilities
+- EmailJS
+- React Scroll
+- React Intersection Observer
+
+---
+
+## 📂 Folder Structure
+
+```text
+src/
+│
+├── assets/
+│   ├── images/
+│   └── resume.pdf
+│
+├── animationa/
+│   ├── Loader.jsx
+│   ├── FloatingBackground.jsx
+│   ├── BackToTop.jsx
+│   ├── MagneticButton.jsx
+│   ├── ScrollProgress.jsx
+│   └── CursorGlow.jsx
+│
+├── components/
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── Navbar.jsx
+│   ├── Projects.jsx
+│   ├── Resume.jsx
+│   └── Skills.jsx
+│
+├── context/
+│   └── ThemeContext.jsx
+│
+├── data/
+│   ├── skills.js
+│   └── projects.js
+│   
+│
+├── pages/
+│   └── Home.jsx
+│   
+│
+├── utils/
+│   └── constants.js
+├── index.css
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ⚡ Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/portfolio.git
+```
+
+### Navigate to the project
+
+```bash
+cd portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+---
+
+## 👀 Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📚 Dependencies
+
+```bash
+npm install framer-motion
+npm install react-icons
+npm install react-scroll
+npm install emailjs-com
+npm install react-intersection-observer
+```
+
+---
+
+## 🌐 Deployment
+
+Deploy easily using **Vercel**.
+
+```bash
+npm run build
+```
+
+Upload the generated `dist` folder or connect your GitHub repository directly with Vercel.
+
+---
+
+## 📈 Performance
+
+- Optimized assets
+- Lazy loading
+- Responsive layout
+- SEO friendly
+- Accessible UI
+- Smooth animations
+
+---
+
+## 📬 Contact
+
+Feel free to connect!
+
+- [LinkedIn](https://www.linkedin.com/in/abhi0605/)
+- [GitHub](https://github.com/abhi-0605)
+- [Gmail](abhinavkumar18jun@gmail.com)
+
+
+---
+
+
+
+### ⭐ If you like this project, consider giving it a star on GitHub!
+```
