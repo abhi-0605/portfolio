@@ -17,7 +17,15 @@ function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-           <img src="/images/profile.webp" alt="about" className='rounded-2xl shadow-xl'/>
+          <img
+            src="/images/profile.webp"
+            alt="About Abhinav Kumar"
+            loading="lazy"
+            decoding="async"
+            width="658"
+            height="658"
+            className="rounded-2xl shadow-xl"
+          />
         </motion.div>
 
 

@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 500);
 
     return () => {
       clearTimeout(timer);
@@ -26,9 +26,9 @@ function App() {
 
   return (
     <>
-      <FloatingBackground />
-      <ScrollProgress />
-      <MouseGlow />
+      {!loading && <FloatingBackground />}
+      {!loading && <ScrollProgress />}
+      {!loading && <MouseGlow />}
       <AnimatePresence mode="wait">
         {loading && <Loader />}
       </AnimatePresence>

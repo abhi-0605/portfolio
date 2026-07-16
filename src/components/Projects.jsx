@@ -41,13 +41,13 @@ function Projects() {
                                     <motion.img
                                         src={project.image}
                                         alt={project.title}
+                                        loading="lazy"
+                                        decoding="async"
+                                        width="656"
+                                        height="294"
                                         className="h-56 w-full object-cover"
-                                        whileHover={{
-                                            scale: 1.08,
-                                        }}
-                                        transition={{
-                                            duration: 0.25,
-                                        }}
+                                        whileHover={{ scale: 1.08 }}
+                                        transition={{ duration: 0.25 }}
                                     />
                                 </div>
 
