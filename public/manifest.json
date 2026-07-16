@@ -1,0 +1,20 @@
+{
+  "name": "Abhinav Kumar Portfolio",
+  "short_name": "Portfolio",
+  "description": "Abhinav Kumar Full Stack Developer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+  ]
+}
