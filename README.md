@@ -52,6 +52,7 @@ Live - https://abhi0605-portfolio.vercel.app/
 - SEO optimized
 - Fast loading
 - Mobile friendly
+<img width="1160" height="625" alt="Screenshot 2026-07-16 140314" src="https://github.com/user-attachments/assets/458c60b5-50e3-4bce-8803-d519093fe46b" />
 
 ---
 
@@ -80,47 +81,65 @@ Live - https://abhi0605-portfolio.vercel.app/
 ## 📂 Folder Structure
 
 ```text
-src/
+portfolio/
 │
-├── assets/
+├── public/
 │   ├── images/
-│   └── resume.pdf
+│   │   ├── favicon.ico
+│   │   ├── favicon.png
+│   │   ├── hero.png
+│   │   ├── profile.png
+│   │   ├── project1.png
+│   │   ├── project2.png
+│   │   └── project3.png
+│   │
+│   ├── resume.pdf
+│   ├── preview.png
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── sitemap.xml
 │
-├── animationa/
-│   ├── Loader.jsx
-│   ├── FloatingBackground.jsx
-│   ├── BackToTop.jsx
-│   ├── MagneticButton.jsx
-│   ├── ScrollProgress.jsx
-│   └── CursorGlow.jsx
+├── src/
+│   ├── animations/
+│   │   ├── BackToTop.jsx
+│   │   ├── FloatingBackground.jsx
+│   │   ├── Loader.jsx
+│   │   ├── MagneticButton.jsx
+│   │   ├── MouseGlow.jsx
+│   │   └── ScrollProgress.jsx
+│   │
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Resume.jsx
+│   │   └── Skills.jsx
+│   │
+│   ├── Context/
+│   │   └── ThemeContext.jsx
+│   │
+│   ├── data/
+│   │   ├── projects.js
+│   │   └── skills.js
+│   │
+│   ├── pages/
+│   │   └── Home.jsx
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
 │
-├── components/
-│   ├── About.jsx
-│   ├── Contact.jsx
-│   ├── Footer.jsx
-│   ├── Hero.jsx
-│   ├── Navbar.jsx
-│   ├── Projects.jsx
-│   ├── Resume.jsx
-│   └── Skills.jsx
-│
-├── context/
-│   └── ThemeContext.jsx
-│
-├── data/
-│   ├── skills.js
-│   └── projects.js
-│   
-│
-├── pages/
-│   └── Home.jsx
-│   
-│
-├── utils/
-│   └── constants.js
-├── index.css
-├── App.jsx
-└── main.jsx
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
 ```
 
 ---
