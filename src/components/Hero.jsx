@@ -146,7 +146,7 @@ function Hero() {
           }}
           className="flex justify-center"
         >
-          <img src="/images/hero.png" alt="abhinav" className='w-72 sm:w-72 md:w-80 lg:w-96 rounded-full shadow-2xl dark:shadow-black/50' />
+          <img src="/images/hero.webp" alt="abhinav" className='w-72 sm:w-72 md:w-80 lg:w-96 rounded-full shadow-2xl dark:shadow-black/50' />
         </motion.div>
 
 
