@@ -37,7 +37,8 @@ function Resume() {
 
 
         <motion.a
-          href="/resume.pdf"
+          // href="/resume.pdf"
+          href='./public/images/resume.pdf'
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
