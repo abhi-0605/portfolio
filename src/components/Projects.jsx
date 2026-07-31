@@ -90,7 +90,13 @@ function Projects() {
                                             whileTap={{
                                                 scale: 0.95,
                                             }}
-                                            href={project.live} className='px-4 py-2 border border-black dark:border-white text-black dark:text-white rounded-lg hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition'>Live Demo</motion.a>
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            href={project.live} 
+                                            className='px-4 py-2 border border-black dark:border-white text-black dark:text-white rounded-lg hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition'
+                                            >
+                                                Live Demo
+                                            </motion.a>
                                     </div>
                                 </div>
                             </motion.div>
