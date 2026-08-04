@@ -108,7 +108,7 @@ function Hero() {
 
             <MagneticButton
               className="border border-black dark:border-white text-black dark:text-white px-6 py-3 rounded-lg hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition"
-              onClick={() => window.open("/resume.pdf")}
+              onClick={() => window.open("/Resume_abhi0605.pdf")}
             >
               Resume
             </MagneticButton>
