@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Mail, Heart, MailIcon } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { LiaLinkedin } from "react-icons/lia";
+import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -23,6 +24,16 @@ function Footer() {
 
 
           <div className='flex items-center justify-center gap-8'>
+            <motion.a
+              whileHover={{ scale: 1.2, y: -5 }}
+              href="https://www.instagram.com/_.abhi_0605/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram Profile"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-zinc-900 dark:bg-zinc-800 hover:bg-zinc-800 transition"
+            >
+              <FaInstagram className='text-[24px]' />
+            </motion.a>
 
             <motion.a
               whileHover={{ scale: 1.2, y: -5 }}
