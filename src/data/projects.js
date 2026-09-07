@@ -23,6 +23,14 @@ const projects = [
     github: "https://github.com/abhi-0605/finbot-ai",
     live: "https://t.me/finbot_abhi0605_bot",
   },
+  {
+    title: "Backend-Scaffold-cli",
+    description: "A CLI tool to quickly scaffold Express.js backend projects with MongoDB, middleware, and common setup.",
+    image: "/images/project4.webp",
+    tech: ["Node.js", "Express.js", "MongoDB", "JWT"],
+    github: "https://github.com/abhi-0605/backend-scaffold-cli",
+    live: "https://www.npmjs.com/package/backend-scaffold-cli",
+  }
 ];
 
 export default projects;
