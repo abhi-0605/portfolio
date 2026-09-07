@@ -11,7 +11,7 @@ const projects = [
     title: "SkillBridge AI",
     description: "AI-powered resume analyzer with ATS scoring and personalized suggestions.",
     image: "/images/project2.webp",
-    tech: ["React", "Node.js", "MongoDB", "AI"],
+    tech: ["React", "Node.js", "MongoDB", "AI", "OCR"],
     github: "https://github.com/abhi-0605/SkillBridge_AI",
     live: "https://skillbridge-ai-abhi0605.vercel.app/",
   },
