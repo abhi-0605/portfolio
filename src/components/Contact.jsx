@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, MapIcon } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { LiaLinkedin } from 'react-icons/lia';
+import { FaInstagram } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
@@ -153,7 +154,12 @@ function Contact() {
 
           <div className='flex flex-wrap justify-center items-center gap-x-12 gap-y-6 my-10 '>
 
-
+            <a href="https://www.instagram.com/_.abhi_0605/" target='_blank' rel='noreferrer'
+              className='flex items-center gap-3 text-lg sm:flex-row  text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:scale-105 transition-all duration-300'
+            >
+              <FaInstagram size={22} />
+              instagram.com/abhi-0605
+            </a>
 
             <a href="https://github.com/abhi-0605" target='_blank' rel='noreferrer'
               className='flex items-center gap-3 text-lg sm:flex-row  text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:scale-105 transition-all duration-300'
